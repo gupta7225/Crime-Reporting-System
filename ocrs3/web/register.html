@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>Register</title>
+<script>
+function fun()
+{
+var no1=f.name.value;
+if(no1.length==0)
+{
+alert("plz enter valid user name");
+f.name.focus();
+return false;
+}
+var no2=f.pwd.value;
+if(no2.length==0)
+{
+alert("plz enter  password");
+f.pwd.focus();
+return false;
+}
+var no3=f.age.value;
+if(no3.length==0 || no3>100)
+{
+alert("plz enter valid age");
+f.age.focus();
+return false;
+}
+var no5=f.address.value;
+if(no5.length==0 )
+{
+alert("plz enter valid address");
+f.address.focus();
+return false;
+}
+var no6=f.pno.value;
+if(no6.length==0)
+{
+alert("plz enter  valid phone number");
+f.pno.focus();
+return false;
+}
+var no7=f.mail.value;
+if(no7.length==0 )
+{
+alert("plz enter valid mail-id");
+f.mail.focus();
+return false;
+}
+
+}
+</script>
+<link rel="stylesheet" href="elegant-aero.css" type="text/css">
+<style type="text/css">
+body {
+          background-image:  url('back2.jpg');
+          background-repeat: repeat;
+          background-position:  center 50%;
+          background-height:100px
+         
+          }
+
+</style>
+<script language="javascript" src="./menu.js"></script>
+<script language="javascript" src="./menu_items.js"></script>
+<script language="javascript" src="./menu_tpl.js"></script>
+<script language="javascript">
+  new menu (MENU_ITEMS, MENU_POS, MENU_STYLES);
+</script>
+
+</head>
+<body>
+<form name="f" action="reg.jsp" method="post" class="elegant-aero" onsubmit="return fun()">
+    <h1>REGISTRATION FORM
+        <span>Please fill all the texts in the fields.</span>
+    </h1>
+    <label>
+        <span>Full Name :</span>
+        <input id="name" type="text" name="name" placeholder="Full Name" />
+    </label>
+
+     <label>
+        <span>User ID :</span>
+        <input id="id" type="text" name="user" placeholder="User ID" />
+    </label>
+   
+    <label>
+        <span>Password :</span>
+        <input id="password" type="password" name="pwd" placeholder="Password" />
+    </label>
+
+    <label>
+        <span>Age :</span>
+        <input id="age" type="text" name="age" placeholder="Age" />
+    </label>
+
+<label>
+        <span>Gender :</span><select name="gender">
+        <option value="Male">Select</option>    
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        </select>
+    </label> 
+
+   <label>
+        <span>Address :</span>
+        <textarea id="address" name="address" placeholder="Address"></textarea>
+    </label>
+
+
+    <label>
+        <span>Contact No :</span>
+        <input id="pno" type="text" name="pno" placeholder="Contact No" />
+    </label>
+
+    <label>
+        <span>E-mail :</span>
+        <input id="email" type="text" name="mail" placeholder="E-mail" />
+    </label>
+
+       
+       <label>
+        <span>&nbsp;</span>
+        <input type="submit" class="button" value="SUBMIT" />&nbsp;&nbsp;&nbsp;<input type="reset" class="button" value="CLEAR" />
+        
+        </label>
+</form>
+</body>
+</html>

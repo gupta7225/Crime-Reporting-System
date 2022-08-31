@@ -1,0 +1,119 @@
+.elegant-aero1 {
+    margin-left:4em;
+    margin-right:auto;
+    margin-top: -4em;
+    max-width: 380px;
+    background: #D2E9FF;
+    padding: 20px 20px 20px 20px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #666;
+    border-radius:25px;
+}
+.elegant-aero1 h1 {
+    font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 10px 10px 10px 20px;
+    display: block;
+    background: #C0E1FF;
+    border-bottom: 1px solid #B8DDFF;
+    margin: -20px -20px 15px;
+    border-radius:25px;
+}
+.elegant-aero1 h1>span {
+    display: block;
+    font-size: 11px;
+}
+
+.elegant-aero1 label>span {
+    float: left;
+    margin-top: 10px;
+    color: #5E5E5E;
+}
+.elegant-aero1 label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+.elegant-aero1 label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.elegant-aero1 input[type="text"],  .elegant-aero1 input[type="password"], .elegant-aero1 textarea, .elegant-aero1 select {
+    color: #888;
+    width: 70%;
+    padding: 0px 0px 0px 5px;
+    border: 1px solid #C5E2FF;
+    background: #FBFBFB;
+    outline: 0;
+    -webkit-box-shadow:inset 0px 1px 6px #ECF3F5;
+    box-shadow: inset 0px 1px 6px #ECF3F5;
+    font: 200 12px/25px Arial, Helvetica, sans-serif;
+    height: 30px;
+    line-height:15px;
+    margin: 2px 6px 16px 0px;
+}
+.elegant-aero1 textarea{
+    height:100px;
+    padding: 5px 0px 0px 5px;
+    width: 70%;
+}
+
+.elegant-aero1 .button{
+    margin-left:1em;
+    margin-top:6px;
+    padding: 10px 30px 10px 30px;
+    background: #66C1E4;
+    border: none;
+    color: #FFF;
+    box-shadow: 1px 1px 1px #4C6E91;
+    -webkit-box-shadow: 1px 1px 1px #4C6E91;
+    -moz-box-shadow: 1px 1px 1px #4C6E91;
+    text-shadow: 1px 1px 1px #5079A3;
+   
+}
+.elegant-aero1 .button:hover{
+    background: #3EB1DD;
+}
+.elegant-aero1 a{
+   font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+   text-decoration: none;
+}
+
+
+.elegant-aero1 input[type=file] {
+  position: absolute;
+  top:-5px; 
+  left:-5px; 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 50px;
+  border: 1px solid red;
+  opacity:0; 
+  cursor: pointer
+}
+
+.elegant-aero1 .fakeFileButton {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100px; 
+  height: 40px; 
+  background-color: #3EB1DD;
+  border-radius: 15px;
+  font-size: 18px;
+  color: rgb(255,255,255);
+  text-align: center;
+  line-height: 40px;
+  margin-left: 11em;
+  
+}
+.elegant-aero1 .fakeFileButton:hover {
+  background-color: rgb(100,150,255);
+  color: rgb(0,0,0);
+}
+
+  

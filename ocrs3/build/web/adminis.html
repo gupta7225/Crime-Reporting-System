@@ -1,0 +1,95 @@
+<html>
+<head>
+
+<title>Administrator</title>
+<script>
+function fun()
+{
+    
+var no1=f.subject.value;
+if(no1.length==0)
+{
+alert("Subject can not be empty");
+f.subject.focus();
+return false;
+}
+var no2=f.message.value;
+if(no2.length==0)
+{
+alert("Message can not be empty");
+f.message.focus();
+return false;
+}
+}
+function func()
+{
+    
+var no1=f1.field1.value;
+if(no1.length==0)
+{
+alert("Subject can not be empty");
+f.field1.focus();
+return false;
+}
+var no2=f1.loc.value;
+if(no2.length==0)
+{
+alert("Specify the location");
+f1.loc.focus();
+return false;
+}
+var no3=f1.desc.value;
+if(no3.length==0)
+{
+alert("Description can not be empty");
+f1.desc.focus();
+return false;
+}
+}
+</script>
+<script language="javascript" src="./menu.js"></script>
+<script language="javascript" src="./admin_items.js"></script>
+<script language="javascript" src="./menu_tpl.js"></script>
+<script language="javascript">
+  new menu (MENU_ITEMS, MENU_POS, MENU_STYLES);
+</script>
+<link rel="stylesheet" href="admin.css" type="text/css">
+<style>
+  h2
+  {
+   margin-top: 1em;   
+   color:#3EB1DD;
+   font: 20px "Trebuchet MS", Arial, Helvetica, sans-serif;
+      
+      }  
+   
+ </style> 
+</head>
+  
+<body>
+ 
+<div class="form-style-6" style="float:left;margin-left:10em;">
+<h1>E-MAIL ALERTS</h1>
+<form method="post" action="mailnew.jsp" name="f" onsubmit="return fun()">
+ 
+<input type="text" name="subject" placeholder="Subject" />
+<textarea name="message" placeholder="Message"></textarea>
+<input type="submit" value="SEND" />
+</form>
+</div>
+<hr style="width: 0px;height: 100%;position:absolute;margin-left: 42em;color: #D2E9FF">
+
+<div class="form-style-6" style="float:right;margin-right:10em;">
+<h1>WEB ALERTS</h1>
+<form method="post" action="alerts.jsp" name="f1" onsubmit="return func()">
+ 
+<input type="text" name="field1" placeholder="Subject" />
+<input type="text" name="loc" placeholder="Location" />
+<textarea name="desc" placeholder="Message"></textarea>
+
+<input type="submit" value="POST" />
+</form>
+</div>
+</body>
+
+</html>

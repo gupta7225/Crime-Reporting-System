@@ -1,0 +1,73 @@
+<html>
+<head>
+<title></title>
+   <SCRIPT LANGUAGE="JavaScript"> 
+function isEmpty(str) {
+  if (str==null || str=="") 
+    return true; 
+  return false; 
+} 
+
+function validate(userName, password) {
+  if (isEmpty(userName)) {
+    alert('User name must have a value'); 
+    return false; 
+  } 
+  if (isEmpty(password)) {
+    alert('Password must have a value'); 
+    return false; 
+  } 
+  return true; 
+} 
+</SCRIPT> 
+
+<script language="javascript" src="./menu.js"></script>
+<script language="javascript" src="./menu_items.js"></script>
+<script language="javascript" src="./menu_tpl.js"></script>
+<script language="javascript">
+  new menu (MENU_ITEMS, MENU_POS, MENU_STYLES);
+</script>
+<link rel="stylesheet" href="elegant-aero.css" type="text/css">
+<style type="text/css">
+body {
+          background-image:  url('back2.jpg');
+          background-repeat: repeat;
+          background-position:  center 50%;
+          background-height:100px;
+         
+          }
+              h3
+  {
+   margin-top: 2em;   
+   color:red;
+   font: 20px "Trebuchet MS", Arial, Helvetica, sans-serif;
+      
+      }
+
+</style>
+</head>
+
+<body>
+
+<form name="f" action="admvalid.jsp" method="post" class="elegant-aero" onsubmit="return validate(this.uname.value,this.pwd.value);">
+    
+<h1>ADMINISTRATOR LOGIN</h1>
+<label>
+        <span>User ID :</span>
+        <input id="name" type="text" name="uname" placeholder="Valid ID" />
+</label>
+   
+<label>
+        <span>Password :</span>
+        <input id="password" type="password" name="pwd" placeholder="Valid Password" />
+</label>
+       
+<label>
+        <span>&nbsp;</span>
+        <input type="submit" class="button" value="SUBMIT" />&nbsp;&nbsp;&nbsp;<input type="reset" class="button" value="CLEAR" />
+        
+</label>
+</form> 
+    
+</body>
+</html>

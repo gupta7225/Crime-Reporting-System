@@ -1,0 +1,99 @@
+<html>
+
+<head>
+<title>view status</title>
+    <script>
+function fun()
+{
+var no1=f.id.value;
+if(no1.length==0 )
+{
+alert("plz enter valid complaint id");
+f.id.focus();
+return false;
+}
+}
+    </script>
+<script language="javascript" src="./menu.js"></script>
+<script language="javascript" src="./user_items.js"></script>
+<script language="javascript" src="./menu_tpl.js"></script>
+<script language="javascript">
+  new menu (MENU_ITEMS, MENU_POS, MENU_STYLES);
+</script>
+
+<style type="text/css">
+body {
+          
+          background-repeat: no-repeat;
+          background-position:  center 50%;
+      
+          }
+          
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 3em;
+    table-layout: fixed;
+    position: fixed;
+    margin-left: 8em;
+}
+
+td
+{
+    color: #888;
+     margin: 2px 6px 16px 0px; 
+    padding: 10px 10px 10px 10px;
+     margin: 2px 6px 16px 0px; 
+    font-family: Helvetica, sans-serif;
+    height:available;
+    text-align: match-parent;  
+}
+
+th {
+    text-align: left;
+   padding: 10px 10px 10px 10px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #3EB1DD;
+    color: white;
+}
+.button{
+       padding: 10px 30px 10px 30px;
+    background: #66C1E4;
+    border: none;
+    color: #FFF;
+    box-shadow: 1px 1px 1px #4C6E91;
+    -webkit-box-shadow: 1px 1px 1px #4C6E91;
+    -moz-box-shadow: 1px 1px 1px #4C6E91;
+    text-shadow: 1px 1px 1px #5079A3;
+   margin-top: 10px;
+   
+    border-radius: 25px;
+   
+    
+   
+}
+ h3
+  {
+   margin-top: 2em;   
+   color:#3EB1DD;
+   font: 30px "Trebuchet MS", Arial, Helvetica, sans-serif;
+      
+      }        
+
+</style>
+</head>
+<body>
+    
+<br><br><br><center>
+<br>
+<form action="stat.jsp" name="f" method=post onsubmit="return fun()"><p style="color:#3EB1DD;">Complaint ID : <input type="text" name="id" size="25"></p>
+<p><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="submit" class="button" value="submit"></p>
+</form>
+</center>
+</body>
+</html>

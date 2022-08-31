@@ -1,0 +1,43 @@
+/*
+ menu styles
+ note: not all browsers render styles the same way so try out your style sheet
+ in different browsers before publishing
+*/
+
+/* level 0 inner */
+
+
+/* level 1 inner */
+.minner {
+	font-family: sans-serif, Tahoma, Verdana, Geneva, Arial, Helvetica;
+	font-size: 12px;
+	margin: 4px 0 0 17px;
+	color: #FFFFFF;
+}
+
+
+/* level 1 outer */
+.onmouseout {
+	text-decoration : none;
+	background-color: #5286BB;
+	border: 1px solid #336699;
+	padding: 0;
+        margin-top: 3em;
+}
+.onmouseover {
+        position: relative;
+	text-decoration : none;
+	background-color: #1A4D81;
+	background-image: url(img/lev1_arrow.gif);
+	background-repeat: no-repeat;
+	border: 1px solid #336699;
+	padding:0;
+}
+.onmousedown {
+	text-decoration : none;
+	background-color: #1A4D81;
+	background-image: url(img/lev1_arrow.gif);
+	background-repeat: no-repeat;
+	border: 1px solid #336699;
+	padding:0;
+}
